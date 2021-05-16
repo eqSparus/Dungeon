@@ -8,8 +8,13 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+            android:theme="@style/Theme.Dungeon">
+        <activity android:name=".activity.GameActivity"
+                  android:screenOrientation="landscape">
+        </activity>
+        <activity
+                android:name=".activity.MainMenu"
+                android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
