@@ -15,7 +15,7 @@ data class Player(
 
     var experience: Int = 0,
     var level: Int = 1,
-    var point: Int = 5,
+    var point: Int = 0,
 
     var lvlArena: Int = 0
 ) : Serializable

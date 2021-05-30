@@ -47,7 +47,7 @@ class Battle(@NonNull private val player: Player,@NonNull private val monster: M
 
     /**@return Возвращает строку удара монстра*/
     fun monsterReception(): String {
-        val damage = monsterDamage.getDamage()
+        val damage = monsterDamage.getDamageMonster()
         return if (damage == 0){
             "${monster.name} промахнулся"
         } else {
