@@ -7,4 +7,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--Цвета для игры-->
+    <color name="health_status">#dc143c</color>
+    <color name="potions_text">#ff4d00</color>
+    <color name="gold_text">#ccad00</color>
+    <color name="monster">#ff2400</color>
+
+    <color name="gold_player">#ffd700</color>
+    <color name="silver_player">#c0c0c0</color>
+    <color name="bronze_player">#cd7f32</color>
+    <color name="item_monster">#696969</color>
+
+    <color name="menu_ex">#663500</color>
 </resources>

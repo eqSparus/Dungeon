@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_menu_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="icon_battle_button">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="text_top_player">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+
+</resources>

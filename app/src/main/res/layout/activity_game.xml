@@ -8,28 +8,132 @@
         tools:context=".activity.GameActivity"
         android:background="@drawable/game_main">
 
-    <ImageView
+    <ImageButton
             android:onClick="doorClick"
             android:layout_width="180dp"
             android:layout_height="240dp"
             app:srcCompat="@drawable/door_one"
-            android:id="@+id/imageDoorOne"
+            android:id="@+id/doorOne"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="MissingConstraints"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.192" android:layout_marginBottom="4dp"
+            app:layout_constraintHorizontal_bias="0.192"
+            android:layout_marginBottom="4dp"
             app:layout_constraintEnd_toEndOf="parent"/>
-    <ImageView
+
+
+    <ImageButton
             android:onClick="doorClick"
             android:layout_width="180dp"
             android:layout_height="240dp"
             app:srcCompat="@drawable/door_two"
-            android:id="@+id/imageDoorTwo"
+            android:id="@+id/doorTwo"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="MissingConstraints"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="4dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.801"/>
+
+    <TextView
+            android:id="@+id/namePlayer"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/gold_text"
+            android:background="@drawable/name_player"/>
+    <ProgressBar
+            android:id="@+id/healthPlayer"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:max="100"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:progressDrawable="@drawable/health_player"
+            app:layout_constraintTop_toBottomOf="@+id/namePlayer"/>
+
+    <TextView
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:id="@+id/potionsTv"
+            app:layout_constraintStart_toEndOf="@+id/imagePotion"
+            app:layout_constraintTop_toBottomOf="@+id/healthPlayer"
+            android:gravity="center"
+            android:textColor="@color/potions_text"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/potions"
+            android:id="@+id/imagePotion"
+            app:layout_constraintTop_toBottomOf="@+id/healthPlayer"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"/>
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/gold"
+            android:id="@+id/imageGold"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/imagePotion"/>
+    <TextView
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:id="@+id/goldTv"
+            app:layout_constraintStart_toEndOf="@+id/imageGold"
+            app:layout_constraintTop_toBottomOf="@+id/potionsTv"
+            android:gravity="center"
+            android:textColor="@color/gold_text"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+    <ImageButton
+            android:id="@+id/menuButtonIcon"
+            android:onClick="clickSaveButton"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"/>
+
+    <ImageButton
+            android:id="@+id/pumpingButton"
+            android:onClick="pumpingClick"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/button_ex"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"/>
+    <FrameLayout
+            android:id="@+id/pumpingFragment"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

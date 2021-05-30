@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity"
+        android:orientation="vertical"
+        android:background="@drawable/menu">
+
+
+    <LinearLayout
+            android:id="@+id/groupMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:text="@string/invitation"
+                android:gravity="center"
+                android:textColor="@color/gold_text"/>
+
+        <EditText
+                android:id="@+id/editNamePlayer"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:textColor="@color/gold_text"/>
+        <ImageButton
+                android:src="@drawable/button_menu_newgame"
+                style="@style/button_menu_style"
+                android:onClick="startGame"/>
+
+        <ImageButton
+                android:src="@drawable/button_menu_loadgame"
+                style="@style/button_menu_style"
+                android:onClick="loadGams"/>
+
+        <ImageButton
+                android:src="@drawable/button_hall"
+                style="@style/button_menu_style"
+                android:onClick="clickHallFame"/>
+
+        <ImageButton
+                android:src="@drawable/button_help"
+                style="@style/button_menu_style"
+                android:onClick="clickHelp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+            android:id="@+id/egg"
+            android:onClick="eggOpen"
+            android:src="@drawable/skull"
+            style="@style/icon_battle_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="4dp"/>
+    <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/frameHelp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
