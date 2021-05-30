@@ -51,6 +51,4 @@ class HallFameFragment : Fragment() {
     interface BackHallFame {
         fun back()
     }
-
-
 }

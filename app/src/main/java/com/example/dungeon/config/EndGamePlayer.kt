@@ -29,14 +29,14 @@ class EndGamePlayer(@NonNull private val context: Context) {
     }
 
     /**
-     *@param gold золото игрока
+     *@param score золото игрока
      *@return индекс заменяемого игрока
      */
-    private fun getIndexNewPlayer(@NonNull gold: Int): Int {
+    private fun getIndexNewPlayer(@NonNull score: Int): Int {
         val betterPlayer = getBetterPlayer()
         var ind = -1
         betterPlayer.forEachIndexed { index, pair ->
-            if (pair.second < gold)
+            if (pair.second < score)
                 ind = index
         }
         return ++ind

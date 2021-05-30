@@ -22,7 +22,6 @@ import kotlin.concurrent.schedule
 
 class ArenaActivity : AppCompatActivity() {
 
-
     /**Перемменая для id с activity_arena*/
     private lateinit var binding: ActivityArenaBinding
 

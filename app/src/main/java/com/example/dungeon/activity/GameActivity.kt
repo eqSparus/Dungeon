@@ -123,6 +123,4 @@ class GameActivity : AppCompatActivity() {
             .addToBackStack(null)
             .commit()
     }
-
-
 }

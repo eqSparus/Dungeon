@@ -34,5 +34,4 @@ class Pumping(@NonNull private val player: Player) {
             player.point--
         }
     }
-
 }
