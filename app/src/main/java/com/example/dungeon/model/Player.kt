@@ -6,8 +6,8 @@ import java.io.Serializable
 data class Player(
     @NonNull val name: String,
     var health: Int = 100,
-    var potions: Int = 3,
-    var gold: Int = 1023,
+    var potions: Int = 0,
+    var gold: Int = 0,
 
     var damage: Int = 60,
     var evasion: Int = 30,
@@ -17,5 +17,5 @@ data class Player(
     var level: Int = 1,
     var point: Int = 0,
 
-    var lvlArena: Int = 20
+    var lvlArena: Int = 0
 ) : Serializable
