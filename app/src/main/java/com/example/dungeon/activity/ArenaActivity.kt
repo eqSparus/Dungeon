@@ -127,13 +127,14 @@ class ArenaActivity : AppCompatActivity() {
     /**Использование зелей*/
     fun drinkPotions(view: View) {
         MediaPlayer.create(applicationContext, R.raw.pottion_button).start()
-        statusGame.text = battle.drinkPotions()
+        val text = battle.drinkPotions()
+        statusGame.text = text
         statusGame.visibility = View.VISIBLE
         statusUpdates(true)
         Timer().schedule(1000) {
             runOnUiThread {
                 statusGame.visibility = View.GONE
-                if (groupBattle.visibility == View.VISIBLE) attackMonster()
+                if (groupBattle.visibility == View.VISIBLE && text != "Кончились бутылки") attackMonster()
             }
         }
     }
