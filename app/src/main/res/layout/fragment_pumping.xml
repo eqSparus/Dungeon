@@ -51,28 +51,28 @@
                 android:layout_marginStart="20dp"/>
         <TextView
                 android:id="@+id/damage"
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="60dp"
-                android:layout_marginStart="150dp"/>
+                android:layout_marginStart="100dp"/>
         <TextView
                 android:id="@+id/evasion"
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="150dp"
+                android:layout_marginStart="100dp"
                 app:layout_constraintTop_toBottomOf="@+id/damage"/>
         <TextView
                 android:id="@+id/probability"
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="150dp"
+                android:layout_marginStart="100dp"
                 app:layout_constraintTop_toBottomOf="@+id/evasion"/>
 
         <ProgressBar

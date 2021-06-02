@@ -78,7 +78,7 @@ class PumpingFragment : Fragment() {
         pointPlayer.text = "Очки:${player.point}"
         damageText.text = "Урон: ${player.damage}"
         evasionText.text = "Уклонение: ${player.evasion}"
-        probabilityText.text = "Шанс попадания ${player.hitProbability}"
+        probabilityText.text = "Шанс попадания: ${player.hitProbability}"
     }
 
 }
